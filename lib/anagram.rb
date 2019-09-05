@@ -11,14 +11,15 @@ class Anagram
   end
   
   def match(options)
+    matches = []
     options.each_with_index do |option, index|
       letter_array = option.split("")
       word_array = @word.split("")
-      if letter_array.sort != word_array.sort 
-        
+      if letter_array.sort == word_array.sort 
+        matches << option
       end 
     end 
-    options
+    matches
   end
   
 end
