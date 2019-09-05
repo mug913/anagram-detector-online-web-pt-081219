@@ -13,7 +13,7 @@ class Anagram
   def match(options)
     options.each_with_index do |option, index|
       letter_array = option.split("")
-      word_array = @word.split
+      word_array = @word.split("")
       if letter_array.sort != word_array.sort 
         binding.pry
         options.delete_at(index) 
