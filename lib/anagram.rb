@@ -7,6 +7,6 @@ class Anagram
     @word = word 
   end
   
-  
+  def match(%w(array))
   
 end
