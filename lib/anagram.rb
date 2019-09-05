@@ -15,7 +15,7 @@ class Anagram
       letter_array = option.split("")
       word_array = @word.split("")
       if letter_array.sort != word_array.sort 
-      #  binding.pry
+       binding.pry
         options.delete_at(index) 
       end 
     end 
